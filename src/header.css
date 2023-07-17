@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=StagSansBook&display=swap');
+
+/* Rest of your CSS code here */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home .section-0 {
+    width: 100%;
+    height: 90px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f3f7fa;
+    transition: all 0.3s ease;
+}
+
+.home .section-0 .navbar {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    background-color: transparent;
+    width: 97%;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 20px;
+}
+
+.home .section-0 .logo-container {
+    height: 70px;
+    text-decoration: none;
+}
+
+.home .section-0 .logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.home .section-0 .nav-menu-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 75%;
+    height: 100%;
+    padding: 0 10px 0 10px;
+}
+
+.home .section-0 .nav-menu-container .dropbtn {
+    background-color: #f3f7fa;
+    border: none;
+    font-family: "Your Desired Font", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 10px 0 10px;
+    font-size: larger;
+    font-weight: 400;
+    color: #444;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #004b44;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 99;
+    width: 100%;
+    top: 106%;
+    left: 1%;
+    /* Remove transition property from here */
+}
+
+.home .section-0 .nav-menu-container .dropdown-content.show {
+    display: block;
+    height: 0;
+    bottom: 0;
+    animation: dropdownAnimation 0.25s forwards;
+}
+
+@keyframes dropdownAnimation {
+    0% {
+        height: 0;
+    }
+
+    100% {
+        height: 60vh;
+    }
+}
+
+
+.home .section-0 .nav-menu-container .closebtn {
+    font-family: "Your Desired Font", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: absolute;
+    right: 2%;
+    font-weight: 100;
+    font-size: xx-large;
+    border: none;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content .dropdown-wings {
+    width: 100%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content .wing-1 {
+    width: 10%;
+    height: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content .wings {
+    width: 30%;
+    height: 100%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content .wings span {
+    font-family: "Your Desired Font", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 100;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content .wings a {
+    font-family: "StagBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    padding: 10px 0 10px 0;
+    cursor: pointer;
+}
+
+.home .section-0 .nav-menu-container .dropdown-content .wings a:hover {
+    color: #3adc79;
+}
+
+.home .section-0 .nav-menu-container a {
+    font-family: "Your Desired Font", "Helvetica Neue", system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    padding: 0 10px 0 10px;
+    font-size: larger;
+    font-weight: 400;
+    color: #444;
+    text-decoration: none;
+}
+
+.dropbtn:after {
+    content: '';
+    display: inline-block;
+    height: 0;
+    width: 0;
+    border: inset 6px;
+    margin-left: 5px;
+    border-top-style: solid;
+    border-color: #3adc79 transparent transparent;
+    transform: translateY(2px) scaleX(0.85);
+}
+
+.dropbtn.show::after {
+    transform: translateY(-4px) scaleX(0.85) rotate(180deg);
+}

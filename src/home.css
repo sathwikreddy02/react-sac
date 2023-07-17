@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=StagSansBook&display=swap');
+
+/* Rest of your CSS code here */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.home .section-1 {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+video#bgvideo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.bg-hover {
+    position: absolute;
+    bottom: 40px;
+    right: 40px;
+    width: 50%;
+    height: 40vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.bg-hover-grid {
+    background-color: #ffffff9d;
+    display: grid;
+    align-items: center;
+}
+
+.bg-hover-grid:hover {
+    background-color: #fffffff9;
+}
+
+.area-of-study--blue {
+    z-index: 1;
+    text-decoration: none;
+    color: black;
+    padding-left: 10px;
+    font-size: x-large;
+    height: 100%;
+    display: grid;
+    align-items: center;
+}
+
+.area-of-study--blue:hover {
+    color: #02945d;
+}
+
+.area-of-study--blue .chevron-link1,
+.chevron-link2,
+.chevron-link3,
+.chevron-link4 {
+    position: relative;
+}
+
+
+.area-of-study--blue .chevron-link1:after,
+.area-of-study--blue .chevron-link1:before,
+.area-of-study--blue .chevron1:after,
+.area-of-study--blue .chevron1:before {
+    border-color: #0069d2 transparent transparent #00b5ff;
+}
+
+.area-of-study--blue .chevron-link2:after,
+.area-of-study--blue .chevron-link2:before,
+.area-of-study--blue .chevron2:after,
+.area-of-study--blue .chevron2:before {
+    border-color: #2d399a transparent transparent #4e63ee;
+}
+
+.area-of-study--blue .chevron-link3:after,
+.area-of-study--blue .chevron-link3:before,
+.area-of-study--blue .chevron3:after,
+.area-of-study--blue .chevron3:before {
+    border-color: #1b98a3 transparent transparent #00d8b5;
+}
+
+.area-of-study--blue .chevron-link4:after,
+.area-of-study--blue .chevron-link4:before,
+.area-of-study--blue .chevron4:after,
+.area-of-study--blue .chevron4:before {
+    border-color: #03adb7 transparent transparent #34e5ef;
+}
+
+.chevron-link1:before,
+.chevron-link2:before,
+.chevron-link3:before,
+.chevron-link4:before {
+    border-style: solid;
+    border-width: 0.4rem 0 0 0.4rem;
+    content: "";
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    right: 1.5rem;
+    top: 50%;
+    margin-top: -0.6rem;
+    position: absolute;
+    transform: rotate(135deg);
+    border-color: #02945d transparent transparent #3adc79;
+}
+
+.area-of-study--blue:hover .chevron-link1:before,
+.area-of-study--blue:hover .chevron-link2:before,
+.area-of-study--blue:hover .chevron-link3:before,
+.area-of-study--blue:hover .chevron-link4:before {
+    animation: transitionBefore 0.8s forwards;
+}
+
+
+@keyframes transitionBefore {
+    0% {
+        right: 1.5rem;
+    }
+
+    100% {
+        right: 1rem;
+    }
+}
+
+.home .section-2 {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-2 .about-img-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .about-img-container .about-img {
+    height: 90%;
+    width: 90%;
+}
+
+.section-2 .about-img-container .about-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-2 .about-descrip {
+    height: 100%;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.section-2 .about-descrip h1 {
+    color: #02945d;
+    font-weight: normal;
+    font-size: 2.5rem;
+}
+
+.section-2 .about-descrip p {
+    text-align: justify;
+}
+
+.home .section-3 {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.home .section-3 h2 {
+    height: 5%;
+    padding-left: 100px;
+}
+
+.home .section-3 .event-content {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-3 .event-img-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3 .event-img-container .event-img {
+    height: 80%;
+    width: 80%;
+}
+
+.section-3 .event-img-container .event-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-3 .event-descrip {
+    height: 100%;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.section-3 .event-descrip h1 {
+    color: #02945d;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.section-3 .event-descrip h1 a {
+    text-decoration: none;
+    color: #02945d;
+}
+
+.section-3 .event-descrip p {
+    color: #626F8D;
+    text-align: justify;
+}
+
+.section-3 .event-descrip .view-all {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: "StagSansBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 2rem;
+    color: #000;
+    border-bottom: solid 2.5px #3adc79;
+    transition: 0.1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.home .section-5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0 0 0;
+}
+
+
+.home .section-5 #container1 {
+    position: relative;
+    width: 60%;
+    height: 200px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.home .section-5 #image-container1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    animation-name: scroll;
+    animation-duration: 7s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.home .section-5 .image {
+    width: 125px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+@keyframes scroll {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translatex(-60%);
+        transform: translatex(-60%);
+    }
+}
+
+.home .section-3 {
+    width: 100%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.home .section-3 h2 {
+    height: 5%;
+    padding-left: 100px;
+}
+
+.home .section-3 .event-content {
+    height: 95%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-3 .event-img-container {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.section-3 .event-img-container .event-img {
+    height: 80%;
+    width: 80%;
+}
+
+.section-3 .event-img-container .event-img img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-3 .event-descrip {
+    height: 100%;
+    width: 50%;
+    padding-right: 20px;
+}
+
+.section-3 .event-descrip h1 {
+    color: #02945d;
+    font-weight: normal;
+    font-size: 2rem;
+}
+
+.section-3 .event-descrip h1 a {
+    text-decoration: none;
+    color: #02945d;
+}
+
+.section-3 .event-descrip p {
+    color: #626F8D;
+    text-align: justify;
+}
+
+.section-3 .event-descrip .view-all {
+    display: inline-block;
+    font-size: 1rem;
+    font-family: "StagSansBook", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    letter-spacing: 0.2px;
+    line-height: 2rem;
+    color: #000;
+    border-bottom: solid 2.5px #3adc79;
+    transition: 0.1s;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.section-4 {
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .mySlides {
+    width: 100%;
+    height: 100%;
+}
+
+.section-4 .testmonial-cursorial {
+    width: 60%;
+    height: 100%;
+}
+
+.section-4 .testmonial-cursorial .mySlides-2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-4 .testmonial-cursorial .testmonial-content {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .testmonial-cursorial .testmonial-content q {
+    text-align: justify;
+    padding: 20px;
+}
+
+.section-4 .testmonial-cursorial .testmonial-user {
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-4 .testmonial-cursorial .testmonial-user p {
+    color: #3adc79;
+}
+
+.section-4 .testmonial-cursorial .testmonial-user .testmonial-user-img {
+    width: 60%;
+    height: 60%;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.section-4 .testmonial-cursorial .testmonial-user .testmonial-user-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}

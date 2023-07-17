@@ -1,0 +1,53 @@
+.section-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.section-2 .objective {
+    width: 80%;
+}
+
+.section-2 .objective h2 {
+    color: #970003;
+    padding-left: 20px;
+}
+
+.section-2 .objective h4 {
+    color: #970003;
+    padding-left: 40px;
+}
+
+.section-2 .objective p {
+    color: black;
+    padding-left: 60px;
+    text-align: justify;
+}
+
+.section-2 .handout {
+    width: 20%;
+    padding: 20px;
+}
+
+.section-2 .handout .our-partners {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-2 .handout .our-partners img {
+    width: 50%;
+    height: 100%;
+}
+
+.section-2 .handout a {
+    width: 100%;
+    height: 100%;
+}
+
+.section-2 .handout a img {
+    width: 100%;
+}

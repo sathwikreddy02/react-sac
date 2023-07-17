@@ -1,0 +1,154 @@
+.footer {
+    background-color: black;
+    height: 70vh;
+}
+
+.footer .footer-2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .footer-2 h3 {
+    color: white;
+    font-weight: 100;
+    font-size: smaller;
+    margin: 0;
+}
+
+.footer .footer-2 h3 a {
+    color: #cdd5ff;
+    font-weight: 600;
+    font-size: medium;
+    text-decoration: none;
+    margin: 0;
+}
+
+.footer .footer-2 hr {
+    width: 30%;
+}
+
+.footer .footer-section {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 60vh;
+}
+
+.footer .visitor-counter {
+    width: 33.33%;
+    height: 100%;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer .visitor-counter h3 {
+    color: #3adc79;
+    margin: 0;
+}
+
+.footer .visitor-counter table {
+    border-collapse: collapse;
+    box-shadow: 0 0 15px -2px #666;
+    color: white;
+}
+
+.footer .visitor-counter table th,
+.footer .visitor-counter table td {
+    border: 1px solid #333;
+    padding: 2px;
+    background: rgb(138, 145, 149);
+    background: radial-gradient(circle, rgb(91, 95, 99) 7%, rgba(41, 96, 133, 1) 52%);
+}
+
+
+.footer .social-links {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    flex-direction: column;
+}
+
+.social-links .social-icons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+}
+
+
+.social-icons .social-icon {
+    width: 100%;
+    background-color: #6e6b6f60;
+    border-radius: 35px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icons a {
+    display: inline-block;
+    width: 40%;
+    height: 13%;
+    display: flex;
+    text-decoration: none;
+    border-radius: 50%;
+    background-color: transparent;
+    color: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social-icons i {
+    padding-right: 20px;
+    font-size: x-large;
+}
+
+.social-icons h3 {
+    font: italic 1.3em "Fira Sans", serif;
+}
+
+.insta:hover {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    ;
+}
+
+.footer .other-links {
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 33.33%;
+    flex-direction: column;
+}
+
+.footer .other-links a {
+    background-color: transparent;
+    -webkit-text-fill-color: white;
+    text-decoration: none;
+    -webkit-background-clip: text;
+    font-size: 17px;
+}
+
+.footer .other-links .other:hover {
+    background: linear-gradient(to right, red, #3498DB, orange, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.footer .other-links .other1:hover {
+    background: linear-gradient(to right, #8E44AD, #8E44AD, white, #8E44AD, white, #8E44AD);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}

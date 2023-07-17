@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.section-1 {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: rgb(232, 173, 90);
+    background: linear-gradient(50deg, rgba(232, 173, 90, 1) 0%, rgba(240, 226, 220, 1) 49%, rgba(252, 176, 69, 1) 100%);
+}
+
+.section-1 .register-component {
+    width: 60%;
+    margin: 10px auto;
+    background-color: transparent;
+}
+
+.register-component .navbar {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    min-height: 60px;
+    border: 1px solid #000;
+}
+
+.navbar .logo-container {
+    height: 70px;
+    text-decoration: none;
+    display: flex;
+}
+
+.logo-container img {
+    width: 100%;
+    height: 100%;
+}
+
+.register-component .register-container {
+    border: 1px solid #000;
+    background-color: #ffffff;
+    min-width: auto;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-container h2 {
+    display: flex;
+    justify-content: center;
+}
+
+.register-form {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.register-form .submit-btn {
+    display: grid;
+    place-items: center;
+}
+
+.register-form .col-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.register-form .user-box {
+    position: relative;
+    margin-bottom: 20px;
+    width: 30%;
+}
+
+.register-form .user-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    top: 0;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+    outline: none;
+    background: transparent;
+    font-family: "Helvetica", "Arial";
+}
+
+.register-form .user-box select {
+    width: 100%;
+    padding: 10px 0;
+    top: 0;
+    font-size: 16px;
+    color: #333;
+    border: none;
+    border-bottom: 2px solid #e6e6e6;
+    outline: none;
+    background: transparent;
+    cursor: pointer;
+    font-family: "Helvetica", "Arial";
+}
+
+.register-form .user-box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #333;
+    pointer-events: none;
+    transition: 0.5s;
+    font-family: "Helvetica", "Arial";
+}
+
+.register-form .user-box input:focus~label,
+.register-form .user-box input:valid~label {
+    top: -20px;
+    left: 0;
+    color: #b8292f;
+    font-weight: bold;
+}
+
+.register-form button[type="submit"] {
+    background-color: #b8292f;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.register-form button[type="submit"]:hover {
+    background-color: #970003;
+}

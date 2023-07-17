@@ -1,0 +1,28 @@
+.feed-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.instagram-post {
+    box-sizing: border-box;
+}
+.instagram-post .video{
+    box-shadow: 0 0 15px -2px #444444;
+}
+.twitter-feed {
+    box-sizing: border-box;
+    box-shadow: 0 0 15px -2px #444444;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 768px) {
+    .feed-container {
+        flex-direction: column;
+    }
+
+    .instagram-post,
+    .twitter-feed {
+        width: 100%;
+    }
+}
